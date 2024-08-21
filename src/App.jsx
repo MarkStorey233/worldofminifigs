@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PdfDownloadQR from './PdfDownloadQR';
 
 const App = () => {
-  return (
-    <div>
-      <h2> World of Mini Figs </h2>
-    </div>
-  )
-}
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route
+					path='*'
+					element={<PdfDownloadQR />}
+				/>
+			</Routes>
+		</BrowserRouter>
+	);
+};
 
-export default App
+export default App;
