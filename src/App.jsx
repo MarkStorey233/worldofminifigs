@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import PdfDownloadQR from './PdfDownloadQR';
+import Home from './Home';
 
 const App = () => {
 	return (
@@ -8,7 +8,7 @@ const App = () => {
 			<Routes>
 				<Route
 					path='*'
-					element={<PdfDownloadQR />}
+					element={<Home />}
 				/>
 			</Routes>
 		</BrowserRouter>
