@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
+import PdfSearcher from './PdfSearcher';
 
 const App = () => {
 	return (
@@ -9,6 +10,10 @@ const App = () => {
 				<Route
 					path='/'
 					element={<Home />}
+				/>
+				<Route
+					path='/wp-content/uploads/2024/05/:{filename}'
+					element={<PdfSearcher />}
 				/>
 			</Routes>
 		</BrowserRouter>
